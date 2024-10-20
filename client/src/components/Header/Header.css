@@ -1,0 +1,49 @@
+.header {
+    background-color: #d1c4e9; /* Light purple background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  /* Align Menubar items to the right */
+  .p-menubar-root {
+    justify-content: space-between; /* Ensure space between start and end */
+  }
+  
+  .p-menubar-end {
+    margin-left: auto; /* Push end items to the right */
+  }
+  
+  @media (max-width: 768px) {
+    .p-menubar-root {
+      flex-direction: column; /* Stack items on smaller screens */
+    }
+    .p-menubar-start {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .p-menubar-end {
+      justify-content: center;
+      margin-left: 0; /* Reset margin for mobile view */
+    }
+  }
+  
+  .auction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 80vh; /* Adjust height as needed */
+    padding: 10px;
+}
+
+.auction-card {
+    width: 100%;
+    padding: 20px;
+}

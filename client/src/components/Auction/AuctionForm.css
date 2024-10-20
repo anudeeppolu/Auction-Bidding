@@ -1,0 +1,10 @@
+.custom-width {
+    width: 50% !important;
+    margin: auto; /* Center the fields */
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-width {
+        width: 100% !important;
+    }
+}
